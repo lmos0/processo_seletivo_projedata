@@ -11,7 +11,6 @@ public class Funcionario extends Pessoa{
         this.role = role;
     }
 
-
     public BigDecimal getSalary() {
         return salary;
     }
@@ -30,11 +29,10 @@ public class Funcionario extends Pessoa{
 
     @Override
     public String toString(){
-        return "Funcionario{" +
+        return "Funcionario: " +
                 "Nome='" + getName() + '\'' +
                 ", Data de Nascimento='" + getBirthDataAsString() + '\'' +
                 ", Salário=" + salary +
-                ", Função='" + role + '\'' +
-                '}';
+                ", Função='" + role + '\'';
     }
 }
